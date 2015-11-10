@@ -1,0 +1,6 @@
+@mixin vertical-center() {
+  top:0;
+  bottom:0;
+  margin:auto;
+  position:absolute;
+}

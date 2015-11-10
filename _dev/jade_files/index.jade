@@ -6,17 +6,12 @@ html(lang="en")
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700',type='text/css')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,400,800,600',type='text/css')
   body
-    h1 Hi, I'm GG!
-    #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.
+    section#home
+      .wrap--outer
+        .wrap--inner
+          .container.clearfix
+            h1.left.half Hi, I'm GG!
+            p.right.half A self-motivated UX & UI Designer with a great passion on creating  products that solve real-world problems and make our life easier.
   footer
     script(src='bower_components/jquery/dist/jquery.min.js')
     script(src='bower_components/angular/angular.js')

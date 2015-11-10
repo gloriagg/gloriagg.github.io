@@ -35,7 +35,7 @@ gulp.task('compressJS', function() {
         .pipe(sourcemaps.init())
         .pipe(uglify())
         .pipe(concat('gg.js'))
-        .pipe(sourcemaps.write('./sourcemaps'))
+        .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest('js'))
         .pipe(browserSync.stream());
 });
@@ -51,8 +51,8 @@ gulp.task('sass', function () {
             cascade: false
       }))
       .pipe(sass({outputStyle: 'compressed'}))
-      .pipe(sourcemaps.write('./sourcemaps'))
       .pipe(concat('gg.css'))
+      .pipe(sourcemaps.write('../maps'))
       .pipe(gulp.dest('css'))
       .pipe(browserSync.stream());
 });
@@ -60,11 +60,6 @@ gulp.task('sass', function () {
 
 
 
-/* watch */
-// gulp.task('watch', function() {
-//    gulp.watch('_dev/js/*.js',['compressJS']);
-//    gulp.watch('_dev/sass/*.scss',['sass']);
-// });
 
 gulp.task('serve', ['templates','sass','compressJS'], function() {
 

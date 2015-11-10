@@ -1,9 +1,21 @@
-h2{
-  color:$green;
-}
-body{
-  background:green;
-  display: flex;
-  border-radius: 8px;
-  border:1px dashed white;
+#home{
+  height:80vh;
+  color:$grey;
+  .wrap--outer{
+    background-color:green;
+    background-image:url('../images/hi_imGG_bg--green.jpg');
+    background-size: cover;
+    background-position: center center;
+    height:100%;
+  }
+  .wrap--inner{
+    height:100%;
+  }
+  .container{
+    height:200px;
+    @include vertical-center;
+  }
+  h1{
+    font-size:2em;
+  }
 }
