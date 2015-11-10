@@ -4,8 +4,11 @@ var uglify      = require('gulp-uglify');
 var sourcemaps  = require('gulp-sourcemaps');
 var sass        = require('gulp-sass');
 var concat      = require('gulp-concat');
-var autoprefixer = require('gulp-autoprefixer');
-var jade = require('gulp-jade');
+var autoprefixer= require('gulp-autoprefixer');
+var jade        = require('gulp-jade');
+var imagemin    = require('gulp-imagemin');
+var pngquant    = require('imagemin-pngquant');
+var svgSprite   = require('gulp-svg-sprite');
 
 /* Broswer sync */
 gulp.task('browser-sync', function() {
@@ -18,7 +21,7 @@ gulp.task('browser-sync', function() {
 
 
 /* Jade */
-gulp.task('templates', function() {
+gulp.task('jadeTemplates', function() {
   var YOUR_LOCALS = {};
 
   gulp.src('_dev/jade_files/*.jade')
@@ -28,8 +31,8 @@ gulp.task('templates', function() {
     .pipe(gulp.dest('./'));
 });
 
-/* scripts */
-/* uglify */
+
+/* uglify compress js*/
 gulp.task('compressJS', function() {
   return gulp.src('_dev/js/*.js')
         .pipe(sourcemaps.init())
@@ -58,10 +61,37 @@ gulp.task('sass', function () {
 });
 
 
+/* Compress Images*/
+gulp.task('compressImage', function () {
+    return gulp.src('_dev/images/*')
+        .pipe(imagemin({
+            progressive: true,
+            svgoPlugins: [{removeViewBox: false}],
+            use: [pngquant()]
+        }))
+        .pipe(gulp.dest('images'));
+});
 
 
+/* Svg sprite */
+config                  = {
+    mode                : {
+        css             : {     // Activate the «css» mode
+            render      : {
+                css     : true
+            }
+        }
+    }
+};
 
-gulp.task('serve', ['templates','sass','compressJS'], function() {
+gulp.task('svgsprite', function () {
+    return gulp.src('_dev/sprites/*.svg')
+               .pipe(svgSprite(config))
+               .pipe(gulp.dest('sprite'));
+});
+
+
+gulp.task('serve', ['jadeTemplates','sass','compressJS','compressImage','svgsprite'], function() {
 
     browserSync.init({
         server: "./"
@@ -69,8 +99,11 @@ gulp.task('serve', ['templates','sass','compressJS'], function() {
 
     gulp.watch("_dev/sass/*.scss", ['sass']);
     gulp.watch("_dev/js/*.js", ['compressJS']);
-    gulp.watch("_dev/jade_files/*.jade", ['templates']);
+    gulp.watch("_dev/jade_files/*.jade", ['jadeTemplates']);
+    gulp.watch("_dev/images/*", ['compressImage']);
+    gulp.watch("_dev/sprites/*.svg", ['svgsprite']);
     gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("sprite/css/svg/*.svg").on('change', browserSync.reload);
 });
 
 

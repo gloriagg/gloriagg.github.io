@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mediaqueries';
 @import 'mixins';
-@import 'general';
-@import 'home';
+@import '0_general';
+@import '1_intro';
+@import '2_journey';

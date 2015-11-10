@@ -1,18 +1,7 @@
 doctype html
 html(lang="en")
-  head
-    title Yanyi Gong | UI & UX Designer
-    link(rel='stylesheet', href='css/gg.css',type='text/css')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700',type='text/css')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,400,800,600',type='text/css')
+  include head.jade
   body
-    section#home
-      .wrap--outer
-        .wrap--inner
-          .container.clearfix
-            h1.left.half Hi, I'm GG!
-            p.right.half A self-motivated UX & UI Designer with a great passion on creating  products that solve real-world problems and make our life easier.
-  footer
-    script(src='bower_components/jquery/dist/jquery.min.js')
-    script(src='bower_components/angular/angular.js')
-    script(src='js/gg.js')
+    include 1_intro.jade
+    include 2_journey.jade      
+    include footer.jade
