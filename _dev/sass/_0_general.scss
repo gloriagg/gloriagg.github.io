@@ -1,8 +1,6 @@
 html{
   font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
-}
-html{
   font-size:.625em;
   @include tablet{
     font-size:.6em;
@@ -11,6 +9,7 @@ html{
     font-size:.5em;
   }
 }
+
 *{
   margin:0;
   padding:0;
@@ -36,13 +35,17 @@ p{
 a{
   text-decoration: none;
   color:inherit;
+  opacity:1;
+  transition:opacity $duration ease-in-out;
+  cursor:pointer;
+  &:hover{
+    opacity:.5;
+  }
 }
 .half{
   width:50%;
-  padding-right:2rem;
   @include phone{
     width:100%;
-    padding:0 1rem;
   }
 }
 .left{
@@ -70,26 +73,35 @@ a{
 .clearfix { display: block; }
 
 .wrap--outer{
-  width:1024px;
+  width:$desktop-width;
   margin:0 auto;
   @include tablet{
     width:100%;
   }
 }
 .wrap--inner{
-  width:90%;
+  width:82%;
+  max-width:720px;
   margin:0 auto;
-  padding:0 .3em;
+  padding:0 $padding_narrow;
   border-left:1px dashed $grey;
   border-right:1px dashed $grey;
 }
 .sprite{
-  display:block;
+  display:inline-block;
+  max-width:100%;
 }
 
 .section--title{
   color:$green;
   font-size:2.2rem;
   line-height: 4rem;
-  padding:1.4em 0 .6em;
+  padding:2em $padding_narrow .6em;
+}
+.center{
+  text-align: center;
+}
+.fullwidth__withpadding{
+  padding-left:$padding_narrow;
+  padding-right:$padding_narrow;
 }

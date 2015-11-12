@@ -4,3 +4,8 @@
   margin:auto;
   position:absolute;
 }
+
+@mixin transitionY_before(){
+  transform:translateY(400px);
+  transition: $duration ease-in-out;
+}

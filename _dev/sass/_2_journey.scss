@@ -6,18 +6,50 @@
     border-color:$green;
   }
   .journey__container{
-    background-color:$lightgrey;
     font-size:1.4rem;
   }
   .journey__single{
+    background-color:$w;
+    border-radius:.2em;
+    overflow-y: hidden;
+    transition: $duration ease-in-out;
+    .left,
+    .right{
+      opacity:0;
+      @include transitionY_before();
+    }
+    &.showing{
+      background-color:$lightgrey;
+      transform:translateY(0px);
+      &.journey__nextStop{
+        background-color:$w;
+      }
+      .left,
+      .right{
+        opacity:1;
+        transform:translateY(0px);
+      }
+    }
     .wrap--inner{
-      padding-bottom: 3em;
+      padding:2em;
+      @include phone{
+        padding:2em 1em;
+      }
     }
     .left{
       width:80%;
+      a{
+        color:$green;
+      }
       @include phone{
         width:100%;
       }
+    }
+  }
+  .journey__nextStop{
+    font-size: 1.3em;
+    p{
+      margin-bottom: 1.6em;
     }
   }
   .sprite__logo{
@@ -26,6 +58,15 @@
     }
   }
   .journey__year{
+    z-index:2;
+    .svg-journey__year,
+    .svg-nextStop_block{
+      @include transitionY_before();
+    }
+    &.showing .svg-journey__year,
+    &.showing .svg-nextStop_block{
+      transform:translateY(0px);
+    }
     .wrap--inner{
       padding: 2em 0 1em;
     }
@@ -34,15 +75,27 @@
       display:inline-block;
       text-align: center;
       font-weight: 600;
-      font-size:.8rem;
+      font-size:1rem;
       padding:.2em 0;
-      left:-42px;
+      left:-49px;
+      &.svg-nextStop_block{
+        position:absolute;
+      }
       @include phone{
         right:0;
         left:auto;
         position:absolute;
       }
-      }
+    }
+    h2{
+      display:inline-block;
+      color:$green;
+      vertical-align: middle;
+    }
+    &.journey__year--next{
+      text-align: center;
+    }
+
   }
   .journey__meta{
     text-transform: uppercase;
@@ -51,6 +104,41 @@
     line-height:1em;
     span,strong{
       margin-right:1em;
+    }
+  }
+  .journey__details--content{
+    display:none;
+    ul{
+      list-style-position: outside;
+      padding: 1em;
+      padding-left: 1.5em;
+    }
+  }
+  .journey_details--toggle{
+    cursor:pointer;
+    padding-top:.4em;
+    .journey_details--btn{
+      display:inline-block;
+      width:10px;
+      height:10px;
+      margin-right:$padding_narrow;
+      transition:all .1s ease-in-out;
+      transform-origin: 50% 50%;
+      transform: rotate(0deg);
+      span{
+        height:2px;
+        width:100%;
+        display:block;
+        background:$darkgrey;
+        transform-origin: 50% 50%;
+        @include vertical-center();
+        &.line2{
+          transform: rotate(90deg);
+        }
+      }
+      &.clicked{
+        transform: rotate(45deg);
+      }
     }
   }
 }

@@ -1,0 +1,36 @@
+#works{
+  .works__all{
+    padding:1em $padding_narrow;
+    text-align: center;
+    &>a{
+      display:inline-block;
+      width:(100%/3);
+      text-align: center;
+      padding:1em $padding_narrow;
+      margin-bottom:2em;
+      max-width:400px;
+      @include tablet(){
+        width:(100%/2);
+      }
+      @include phone(){
+        width:100%;
+      }
+      img{
+        max-width: 100%;
+        margin-bottom: 1em;
+        width:100%;
+      }
+      h3{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        font-size:1.5em;
+      }
+      .works__labels span{
+        background-color:$grey;
+        margin:$padding_narrow;
+        padding:.2em .6em;
+        display:inline-block;
+      }
+    }
+  }
+}

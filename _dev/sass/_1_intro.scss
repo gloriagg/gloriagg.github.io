@@ -1,20 +1,51 @@
 #intro{
-  height:80vh;
+  height:70%;
+  height:70vh;
+  max-height:500px;
   color:$grey;
+  overflow:hidden;
   .wrap--outer{
-    background-color:green;
-    background-image:url('../images/hi_imGG_bg--green.jpg');
+    height:100%;
+  }
+  .wrap--outer__upperlayer,
+  .wrap--outer__underlayer{
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
+    width:100%;
     height:100%;
+    position: absolute;
+    z-index:-1;
+    top:0;
+    border-radius:$radius;
+  }
+  .wrap--outer__upperlayer{
+    background-image:url('../images/hi_imGG_bg--green.jpg');
+    opacity:0;
+  }
+  .wrap--outer__underlayer{
+    background-image:url('../images/hi_imGG_bg--normal.jpg');
   }
   .wrap--inner{
     height:100%;
   }
+  .container,
+  .wrap--outer__upperlayer{
+    transition:.4s ease-in-out;
+  }
   .container{
     height:200px;
     @include vertical-center;
+    top:-200%;
+    opacity:.4;
+  }
+  .half{
+    padding-right:2rem;
+    @include phone{
+      width:100%;
+      padding:0 1rem;
+    }
   }
   h1{
     font-size:6em;
@@ -23,10 +54,20 @@
     font-size:2rem;
   }
   .svg-goDown{
-    margin:2em 0 1em;
+    margin:3em 0 1em;
     @include phone{
       margin-left:auto;
       margin-right:auto;
     }
+  }
+  &.loaded{
+    .container{
+      top:0;
+      opacity:1;
+    }
+    .wrap--outer__upperlayer{
+      opacity:1;
+    }
+
   }
 }

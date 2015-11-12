@@ -1,0 +1,69 @@
+#skills{
+  .wrap--inner{
+    border-style:none;
+    margin-bottom: $padding_v;
+  }
+  h2{
+    text-align: center;
+    margin-bottom:$padding_v;
+  }
+  .skills__single{
+    border-top:1px dashed $green;
+    padding:2em 0;
+    font-size:1.4em;
+  }
+  blockquote{
+    padding:$padding_v $padding_h;
+    font-style: italic;
+    font-size: 1.1em;
+    line-height:1.6em;
+    &:before,
+    &:after{
+      font-size:2.2em;
+      line-height:1em;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 900;
+      color:$grey;
+      position: absolute;
+      text-align: center;
+    }
+    &:before{
+      content:"“";
+      top:0;
+      left:0;
+    }
+    &:after{
+      content:"”";
+      bottom:0;
+      right:0;
+    }
+  }
+  .skills__quote__meta{
+    padding:0 $padding_h;
+  }
+  .skills__bars{
+    list-style:none;
+    padding:$padding_v $padding_h;
+    &>li{
+      margin-bottom: $padding_v;
+    }
+  }
+  .skill__bar{
+    height:10px;
+    width:100%;
+    .skill__bar_bg{
+      background:$grey;
+      width:100%;
+      height:100%;
+    }
+    .skill__bar_percentage{
+      background:$green;
+      width:0;
+      height:100%;
+      position:absolute;
+      z-index: 2;
+      top:0;
+      transition:$duration ease-in-out;
+    }
+  }
+}

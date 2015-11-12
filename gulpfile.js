@@ -63,7 +63,7 @@ gulp.task('sass', function () {
 
 /* Compress Images*/
 gulp.task('compressImage', function () {
-    return gulp.src('_dev/images/*')
+    return gulp.src('_dev/images/*/*')
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],

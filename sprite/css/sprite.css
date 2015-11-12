@@ -1,5 +1,14 @@
+.svg-behance {
+	background: url(svg/sprite.css-04f63e1a.svg) 0 99.68385975904987% no-repeat;
+}
+
+.svg-behance-dims {
+	width: 156.848px;
+	height: 105.667px;
+}
+
 .svg-goDown {
-	background: url(svg/sprite.css-a90a1e14.svg) 68.24673300361455% 29.481132075471695% no-repeat;
+	background: url(svg/sprite.css-04f63e1a.svg) 87.85206101758104% 84.27567966006157% no-repeat;
 }
 
 .svg-goDown-dims {
@@ -8,16 +17,34 @@
 }
 
 .svg-journey__year {
-	background: url(svg/sprite.css-a90a1e14.svg) 65.08541448058762% 55.37885874649205% no-repeat;
+	background: url(svg/sprite.css-04f63e1a.svg) 89.60464191028127% 40.82911862069691% no-repeat;
 }
 
 .svg-journey__year-dims {
-	width: 42.875px;
-	height: 18.375px;
+	width: 48.979px;
+	height: 20.991px;
+}
+
+.svg-linkedin {
+	background: url(svg/sprite.css-04f63e1a.svg) 0 0 no-repeat;
+}
+
+.svg-linkedin-dims {
+	width: 158px;
+	height: 105px;
+}
+
+.svg-logo_cdm {
+	background: url(svg/sprite.css-04f63e1a.svg) 66.80648107431587% 0 no-repeat;
+}
+
+.svg-logo_cdm-dims {
+	width: 96.496px;
+	height: 57.082px;
 }
 
 .svg-logo_cuc {
-	background: url(svg/sprite.css-a90a1e14.svg) 0 99.43429945848617% no-repeat;
+	background: url(svg/sprite.css-04f63e1a.svg) 99.61991176942618% 0 no-repeat;
 }
 
 .svg-logo_cuc-dims {
@@ -26,7 +53,7 @@
 }
 
 .svg-logo_dajie {
-	background: url(svg/sprite.css-a90a1e14.svg) 0 0 no-repeat;
+	background: url(svg/sprite.css-04f63e1a.svg) 62.698412698412696% 54.07011494252873% no-repeat;
 }
 
 .svg-logo_dajie-dims {
@@ -34,21 +61,39 @@
 	height: 37px;
 }
 
-.svg-nextStop_blcok {
-	background: url(svg/sprite.css-a90a1e14.svg) 0 32.17391304347826% no-repeat;
+.svg-logo_ecd {
+	background: url(svg/sprite.css-04f63e1a.svg) 62.698412698412696% 32.80574712643678% no-repeat;
 }
 
-.svg-nextStop_blcok-dims {
+.svg-logo_ecd-dims {
 	width: 81px;
 	height: 37px;
 }
 
-.svg-year_block {
-	background: url(svg/sprite.css-a90a1e14.svg) 100% 0 no-repeat;
+.svg-logo_fcv {
+	background: url(svg/sprite.css-04f63e1a.svg) 62.54329539831767% 76.45494313210848% no-repeat;
 }
 
-.svg-year_block-dims {
-	width: 81px;
-	height: 37px;
+.svg-logo_fcv-dims {
+	width: 80.375px;
+	height: 39.55px;
+}
+
+.svg-nextStop_block {
+	background: url(svg/sprite.css-04f63e1a.svg) 89.59044729041841% 52.2507527246512% no-repeat;
+}
+
+.svg-nextStop_block-dims {
+	width: 48.934px;
+	height: 22.352px;
+}
+
+.svg-sendEmail {
+	background: url(svg/sprite.css-04f63e1a.svg) 88.85382007604191% 68.53823045967238% no-repeat;
+}
+
+.svg-sendEmail-dims {
+	width: 46.579px;
+	height: 34.57px;
 }
 
