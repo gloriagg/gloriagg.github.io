@@ -10,8 +10,12 @@ $(window).scroll(function(){
     'opacity':1-windowScroll/200
   });
 
+  // $("#intro .wrap--outer__upperlayer,#intro .wrap--outer__underlayer").css({
+  //   'background-position-y'     :"-'+windowScroll/40+'%"
+  // });
+
   $("#intro .container").css({
-    'transform'     :'translate(0px, '+windowScroll/4+'%)',
+    'transform'     :'translateY('+windowScroll/4+'%)',
     'opacity':1-windowScroll/100
   });
 

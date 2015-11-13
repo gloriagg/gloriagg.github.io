@@ -37,7 +37,7 @@
     .left{
       width:80%;
       a{
-        opacity:.6;
+        border-bottom:1px dashed $green;
       }
       @include phone{
         width:100%;
@@ -65,8 +65,11 @@
     &.showing .svg-nextStop_block{
       transform:translateY(0px);
     }
+    &:first-child .wrap--inner{
+      padding-top:0;
+    }
     .wrap--inner{
-      padding: 2em 0 1em;
+      padding: 3em 0 1em;
     }
     p{
       color:$grey;

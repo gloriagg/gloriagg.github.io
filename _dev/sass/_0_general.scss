@@ -105,3 +105,19 @@ a{
   padding-left:$padding_narrow;
   padding-right:$padding_narrow;
 }
+
+.btn{
+  display:inline-block;
+  border-bottom: 1px dashed $grey;
+  margin:1em 0;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size:1.6rem;
+  letter-spacing: .3rem;
+  transition: .2s ease-in-out;
+  padding-bottom: $padding_narrow;
+  &:hover{
+    opacity:1;
+    border-color:$darkgrey;
+  }
+}

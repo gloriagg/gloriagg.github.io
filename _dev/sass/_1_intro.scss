@@ -6,6 +6,7 @@
   overflow:hidden;
   .wrap--outer{
     height:100%;
+    width:100%;
   }
   .wrap--outer__upperlayer,
   .wrap--outer__underlayer{
@@ -40,8 +41,13 @@
     top:-200%;
     opacity:.4;
   }
-  .half{
+  .left{
+    padding-left:2rem;
+  }
+  .right{
     padding-right:2rem;
+  }
+  .half{
     @include phone{
       width:100%;
       padding:0 1rem;
