@@ -29,7 +29,7 @@ $(window).scroll(function(){
 
     var journey__single = $('#journey .journey__container>*');
     journey__single.each(function(i){
-        if(windowScroll>journey__single.eq(i).offset().top - ($(window).height()/1.4)){
+        if(windowScroll>journey__single.eq(i).offset().top - ($(window).height()/.9)){
           journey__single.eq(i).addClass('showing');
         }else{
           journey__single.eq(i).removeClass('showing');
@@ -60,7 +60,7 @@ $(window).scroll(function(){
 
     bar__single.each(function(i){
         var className = $(this).parent().parent().attr('class');
-        console.log(className);
+
         if(windowScroll>bar__single.eq(i).offset().top - ($(window).height())){
           bar__single.eq(i).css("width", percentage_array[i]);
         }else{

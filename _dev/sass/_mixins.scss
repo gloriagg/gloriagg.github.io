@@ -6,6 +6,6 @@
 }
 
 @mixin transitionY_before(){
-  transform:translateY(400px);
+  transform:translateY(300px);
   transition: $duration ease-in-out;
 }

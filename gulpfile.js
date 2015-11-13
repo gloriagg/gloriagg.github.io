@@ -100,10 +100,11 @@ gulp.task('serve', ['jadeTemplates','sass','compressJS','compressImage','svgspri
     gulp.watch("_dev/sass/*.scss", ['sass']);
     gulp.watch("_dev/js/*.js", ['compressJS']);
     gulp.watch("_dev/jade_files/*.jade", ['jadeTemplates']);
-    gulp.watch("_dev/images/*", ['compressImage']);
+    gulp.watch("_dev/images/*/*", ['compressImage']);
     gulp.watch("_dev/sprites/*.svg", ['svgsprite']);
     gulp.watch("*.html").on('change', browserSync.reload);
     gulp.watch("sprite/css/svg/*.svg").on('change', browserSync.reload);
+    gulp.watch("_dev/images/*/*").on('change', browserSync.reload);
 });
 
 
