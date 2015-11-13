@@ -1,9 +1,15 @@
 #intro{
-  height:85%;
-  height:85vh;
-  // max-height:500px;
   color:$grey;
   overflow:hidden;
+  opacity:0;
+  height:100vh;
+  transition: .6s ease-in-out;
+  &.loaded{
+    opacity: 1;
+    height:85%;
+    height:85vh;
+    // max-height:500px;
+  }
   .wrap--outer{
     height:100%;
     width:100%;
@@ -34,13 +40,14 @@
     border-right:1px dashed $grey;
   }
   .container,
-  .wrap--outer__upperlayer{
+  .wrap--outer__upperlayer,
+  .svg-goDown{
     transition:.4s ease-in-out;
   }
   .container{
     height:200px;
     @include vertical-center;
-    top:-200%;
+    top:-180%;
     opacity:.4;
   }
   .left{
@@ -66,13 +73,13 @@
     font-size:2rem;
   }
   .svg-goDown{
-    margin:3em 0 1em;
-    @include phone{
-      margin-left:auto;
-      margin-right:auto;
-    }
+    @include vertical-center();
+    bottom:2em;
+    left:0;
+    right:0;
+    top:auto;
   }
-  &.loaded{
+  .wrap--outer.loaded{
     .container{
       top:0;
       opacity:1;

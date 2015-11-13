@@ -14,10 +14,11 @@ $(window).scroll(function(){
   //   'background-position-y'     :"-'+windowScroll/40+'%"
   // });
 
-  $("#intro .container").css({
+  $("#intro .container,#intro .svg-goDown").css({
     'transform'     :'translateY('+windowScroll/4+'%)',
     'opacity':1-windowScroll/100
   });
+
 
   // journey
   // if(windowScroll>$('#journey').offset().top - ($(window).height()/2)){

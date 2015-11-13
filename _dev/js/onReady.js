@@ -1,7 +1,8 @@
 $( document ).ready(function() {
+    $('#intro').addClass('loaded');
     setTimeout(function() {
-      $('#intro').addClass('loaded');
-    }, 500);
+      $('#intro .wrap--outer').addClass('loaded');
+    },500);
 
     // toggle journey details
     $( ".journey_details--toggle" ).click(function() {
