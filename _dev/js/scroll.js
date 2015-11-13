@@ -51,7 +51,7 @@ $(window).scroll(function(){
     var user_research= "80%";
     var statistical_analysis= "60%";
     var visual_design= "70%";
-    var motion_graphics= "30%";
+    var motion_graphics= "25%";
 
     var html5= "90%";
     var css3= "98%";
@@ -75,7 +75,6 @@ $(window).scroll(function(){
     //portfolio
     var work__single = $('.works__all>a');
     work__single.each(function(a){
-        console.log("lala");
         if(windowScroll>work__single.eq(a).offset().top - ($(window).height()/0.9)){
           setTimeout(function(){
             work__single.eq(a).addClass('showing');

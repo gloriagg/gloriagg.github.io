@@ -84,8 +84,6 @@ a{
   max-width:720px;
   margin:0 auto;
   padding:0 $padding_narrow;
-  border-left:1px dashed $grey;
-  border-right:1px dashed $grey;
 }
 .sprite{
   display:inline-block;
@@ -109,7 +107,7 @@ a{
 .btn{
   display:inline-block;
   border-bottom: 1px dashed $grey;
-  margin:1em 0;
+  margin:2em 0;
   text-transform: uppercase;
   font-weight: 400;
   font-size:1.6rem;

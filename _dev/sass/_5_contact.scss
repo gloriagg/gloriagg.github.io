@@ -34,11 +34,12 @@
     }
   }
   .contact__email{
-    padding:4em $padding_narrow;
+    padding-top:4em;
+    padding-bottom:4em;
     span{
       font-size:2.4em;
       margin:0 .3em;
-      font-weight: 100;
+      font-weight: 300;
     }
     .sprite,
     span{
@@ -46,6 +47,13 @@
     }
   }
   .site__note{
-    padding:.8em $padding_narrow;
+    padding:1em $padding_narrow;
+    p{
+      line-height: 1.4em;
+    }
+    a{
+      color:$green;
+      font-weight: 400;
+    }
   }
 }

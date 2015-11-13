@@ -30,6 +30,8 @@
   }
   .wrap--inner{
     height:100%;
+    border-left:1px dashed $grey;
+    border-right:1px dashed $grey;
   }
   .container,
   .wrap--outer__upperlayer{

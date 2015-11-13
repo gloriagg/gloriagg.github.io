@@ -1,7 +1,4 @@
 #works{
-  .wrap--inner{
-    border-style:none;
-  }
   .works__all{
     padding:1em $padding_narrow;
     max-width: 1200px;
@@ -40,7 +37,7 @@
       &:hover{
         opacity:1;
         .works__img{
-          height: 194px;
+          height: 210px;
           opacity:1;
         }
       }
