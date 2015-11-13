@@ -28,7 +28,7 @@
     border-radius:$radius;
   }
   .wrap--outer__upperlayer{
-    background-image:url('../images/hi_imGG_bg--green.jpg');
+    background-image:url('../images/hi_imGG_bg--green_blur.jpg');
     opacity:0;
   }
   .wrap--outer__underlayer{
@@ -42,12 +42,12 @@
   .container,
   .wrap--outer__upperlayer,
   .svg-goDown{
-    transition:.4s ease-in-out;
+    transition:.6s ease-in-out;
   }
   .container{
     height:200px;
     @include vertical-center;
-    top:-180%;
+    top:150%;
     opacity:.4;
   }
   .left{

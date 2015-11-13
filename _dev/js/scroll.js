@@ -59,7 +59,9 @@ $(window).scroll(function(){
     var jquery= "80%";
     var gulp= "80%";
     var wordpress= "50%";
-    var percentage_array=[wireframe,rapid_prototype,usability_test,user_research,statistical_analysis,visual_design,motion_graphics,html5,css3,jquery,gulp,wordpress];
+    var shopify = "40%";
+    var php = "10%";
+    var percentage_array=[wireframe,rapid_prototype,usability_test,user_research,statistical_analysis,visual_design,motion_graphics,html5,css3,jquery,gulp,wordpress,shopify,php];
 
     var bar__single = $('li .skill__bar .skill__bar_percentage');
 

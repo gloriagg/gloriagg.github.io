@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    console.log("Hi there, I am so happy that you are intersted in my code!" +'\n'+"Any feedback? Please feel free to contact me at gg.yanyi.gong@gmail.com :D");
     $('#intro').addClass('loaded');
     setTimeout(function() {
       $('#intro .wrap--outer').addClass('loaded');
