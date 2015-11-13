@@ -13,8 +13,7 @@
     border-radius:.2em;
     overflow-y: hidden;
     transition: $duration ease-in-out;
-    .left,
-    .right{
+    .journey__content{
       opacity:0;
       @include transitionY_before();
     }
@@ -24,8 +23,7 @@
       &.journey__nextStop{
         background-color:$w;
       }
-      .left,
-      .right{
+      .journey__content{
         opacity:1;
         transform:translateY(0px);
       }
@@ -39,7 +37,7 @@
     .left{
       width:80%;
       a{
-        
+        opacity:.6;
       }
       @include phone{
         width:100%;

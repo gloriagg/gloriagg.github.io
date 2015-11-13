@@ -29,7 +29,7 @@ $(window).scroll(function(){
 
     var journey__single = $('#journey .journey__container>*');
     journey__single.each(function(i){
-        if(windowScroll>journey__single.eq(i).offset().top - ($(window).height()/.9)){
+        if(windowScroll>journey__single.eq(i).offset().top - ($(window).height()/0.9)){
           journey__single.eq(i).addClass('showing');
         }else{
           journey__single.eq(i).removeClass('showing');
@@ -41,25 +41,25 @@ $(window).scroll(function(){
     //skills bars
 
     // skills percentage
-    // var wireframe = "98%";
-    // var rapid_prototype= "90%";
-    // var usability_test= "80%";
-    // var user_research= "80%";
-    // var statistical_analysis= "60%";
-    // var visual_design= "70%";
-    // var motion_graphics= "30%";
-    //
-    // var html5= "90%";
-    // var css3= "90%";
-    // var jquery= "70%";
-    // var gulp= "80%";
-    // var wordpress= "50%";
-    var percentage_array=['98%','90%','80%','80%','60%','70%','30%','90%','90%','70%','80%','50%'];
+    var wireframe = "98%";
+    var rapid_prototype= "90%";
+    var usability_test= "80%";
+    var user_research= "80%";
+    var statistical_analysis= "60%";
+    var visual_design= "70%";
+    var motion_graphics= "30%";
+
+    var html5= "90%";
+    var css3= "98%";
+    var jquery= "80%";
+    var gulp= "80%";
+    var wordpress= "50%";
+    var percentage_array=[wireframe,rapid_prototype,usability_test,user_research,statistical_analysis,visual_design,motion_graphics,html5,css3,jquery,gulp,wordpress];
 
     var bar__single = $('li .skill__bar .skill__bar_percentage');
 
     bar__single.each(function(i){
-        var className = $(this).parent().parent().attr('class');
+        var className = $this.parent().parent().attr('class');
 
         if(windowScroll>bar__single.eq(i).offset().top - ($(window).height())){
           bar__single.eq(i).css("width", percentage_array[i]);
@@ -68,6 +68,18 @@ $(window).scroll(function(){
         }
     });
 
+    //portfolio
+    var work__single = $('.works__all>a');
+    work__single.each(function(a){
+        console.log("lala");
+        if(windowScroll>work__single.eq(a).offset().top - ($(window).height()/0.9)){
+          setTimeout(function(){
+            work__single.eq(a).addClass('showing');
+          },80*(a+1));
+        }else{
+          work__single.eq(a).removeClass('showing');
+        }
+    });
 
 
 });
