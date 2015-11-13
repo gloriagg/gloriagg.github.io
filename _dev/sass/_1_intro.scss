@@ -48,6 +48,10 @@
     padding-right:2rem;
   }
   .half{
+    @include tablet{
+      padding-right:1rem;
+      padding-left:0;
+    }
     @include phone{
       width:100%;
       padding:0 1rem;

@@ -4,9 +4,11 @@
   }
   .works__all{
     padding:1em $padding_narrow;
-    text-align: center;
     max-width: 1200px;
     margin:0 auto;
+    @include phone(){
+      text-align: center;
+    };
     &>a{
       opacity:0;
       display:inline-block;
