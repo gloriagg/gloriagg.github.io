@@ -101,6 +101,10 @@
         border-color:$green;
         cursor:auto;
       }
+      @include phone(){
+        width:14px;
+        height:14px;
+      }
     }
   }
 }

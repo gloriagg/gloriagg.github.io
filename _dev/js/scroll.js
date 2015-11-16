@@ -7,7 +7,7 @@ $(window).scroll(function(){
 
   // intro
   $("#intro .wrap--outer__upperlayer").css({
-    'opacity':1-windowScroll/200
+    // 'opacity':1-windowScroll/200
   });
 
   // $("#intro .wrap--outer__upperlayer,#intro .wrap--outer__underlayer").css({

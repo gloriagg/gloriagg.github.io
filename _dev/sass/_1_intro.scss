@@ -26,6 +26,11 @@
     z-index:-1;
     top:0;
     border-radius:$radius;
+    .is_iOS & {
+      background-image:none;
+      background-attachment: scroll;
+      background-color:$green;
+    }
   }
   .wrap--outer__upperlayer{
     background-image:url('../images/hi_imGG_bg--green_blur.jpg');
@@ -41,6 +46,7 @@
   }
   .container,
   .wrap--outer__upperlayer,
+  .wrap--outer__underlayer,
   .svg-goDown{
     transition:.6s ease-in-out;
   }
