@@ -1,5 +1,17 @@
 $( document ).ready(function() {
     console.info("Hi there, I am so happy that you are intersted in my code!" +'\n'+"Any feedback? Please feel free to contact me at gg.yanyi.gong@gmail.com :D"+'\n\n');
+
+
+
+    //JSON for Work section data
+    $.getJSON("works.json",function(workdata){
+        $.each(workdata, function(key,value){
+          var works_a_html = "<a href="+value.work_href+" class="+value.work_class+" target='_blank'><div class='works__img'><img src="+value.work_images[0]+"></div><h3>"+ value.work_name +"</h3><div class='works__labels'><span>"+ value.work_label +"</span></div></a>";
+          $(".works__all").append(works_a_html);
+        });
+    });
+
+
     $('#intro').addClass('loaded');
     setTimeout(function() {
       $('#intro .wrap--outer').addClass('loaded');
@@ -19,7 +31,9 @@ $( document ).ready(function() {
     }
 
 
-    // reviews rotato
+
+
+    // reviews rotate
     var review_eq = 0;
     var reviews_single = $(".skills_reviews_all li");
     var reviews__control_btn = $('.skills_reviews_control>li');
@@ -28,29 +42,35 @@ $( document ).ready(function() {
 
     $(".skills_reviews_control li").eq(review_eq).addClass('active');
 
-    // setInterval(function() {
-      // for (review_eq = 0; review_eq < reviews_single.length; review_eq++) {
-      //
-      //         reviews_single.removeClass('active');
-      //         reviews_single.eq(review_eq).addClass('active');
-      //         console.log(review_eq);
-      //         // if(review_eq==reviews_single.length-1){
-      //         //   review_eq = 0;
-      //         // }
-      // }
-    // }, 2000);
-
 
 
 
     reviews__control_btn.click(function(){
         var i = $(this).index();
 
-        reviews_single.fadeOut(200);
+        reviews_single.fadeOut(0);
         reviews_single.eq(i).fadeIn(700);
         reviews__control_btn.removeClass('active');
         reviews__control_btn.eq(i).addClass('active');
+        clearInterval(review_rotation);
     });
+
+
+    var review_rotation = setInterval(function(){
+
+
+        reviews_single.eq(review_eq).fadeOut(0);
+        reviews__control_btn.removeClass('active');
+        review_eq++;
+
+        if(review_eq >= 3){
+        review_eq = 0;
+        }
+        reviews_single.eq(review_eq).fadeIn(700);
+        reviews__control_btn.eq(review_eq).addClass('active');
+
+
+    },12000);
 
 
 
@@ -80,12 +100,12 @@ $( document ).ready(function() {
     var $img = $(this).find('img');
 
 
-    jQuery.each( $img_a, function() {
-      var className = $(this).attr('class');
-      var $img = $(this).find('img');
-
-      $img.attr('src','../images/works/' +className+ '/1.jpg');
-    });
+    // jQuery.each( $img_a, function() {
+    //   var className = $(this).attr('class');
+    //   var $img = $(this).find('img');
+    //
+    //   $img.attr('src','../images/works/' +className+ '/1.jpg');
+    // });
 
 
 
@@ -104,7 +124,7 @@ $( document ).ready(function() {
     //   $img.attr('src','../images/works/' +className+ '/'+b+'.jpg');
     //   $img.fadeIn(2000);
     //
-    // },4000);
+    // },1000);
 
 
 

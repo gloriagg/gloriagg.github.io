@@ -1,0 +1,148 @@
+[
+  {
+    "work_name":"AEIP Client Dashboard and CRM",
+    "work_href":"https://www.behance.net/gallery/29997331/A-comprehensive-web-platform-UX-design",
+    "work_class":"aeip",
+    "work_title":"View details",
+    "work_label":[
+      "UX design",
+      "Front-end"
+    ],
+    "work_images":[
+      "images/works/aeip/1.jpg",
+      "images/works/aeip/2.jpg",
+      "images/works/aeip/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"Canadian Citizenship Exam App",
+    "work_href":"https://www.behance.net/gallery/30586867/Mobile-App-UI-UX-Design-(Canadian-Citizenship-Test-App)",
+    "work_class":"vcrc",
+    "work_title":"View details",
+    "work_label":[
+      "UX design",
+      "UI design"
+    ],
+    "work_images":[
+      "images/works/vcrc/1.jpg",
+      "images/works/vcrc/2.jpg",
+      "images/works/vcrc/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"Dramatic Chipmunk Mobile Game",
+    "work_href":"https://www.behance.net/gallery/29989937/Mobile-Game-UI-Design-Dramatic-Chipmunk",
+    "work_class":"dramaticchipmunk",
+    "work_title":"View details",
+    "work_label":[
+      "UI design",
+      "UX design"
+    ],
+    "work_images":[
+      "images/works/dramaticchipmunk/1.jpg",
+      "images/works/dramaticchipmunk/2.jpg",
+      "images/works/dramaticchipmunk/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"Chef Tony Seafood Restaurant Website",
+    "work_href":"https://www.behance.net/gallery/30554337/%08One-Page-Responsive-Website-For-A-Restaurant",
+    "work_class":"cheftony",
+    "work_title":"View details",
+    "work_label":[
+      "UX design",
+      "UI design",
+      "Front-end"
+    ],
+    "work_images":[
+      "images/works/cheftony/1.jpg",
+      "images/works/cheftony/2.jpg",
+      "images/works/cheftony/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"Sick Flower Mobile App Prototype",
+    "work_href":"https://www.behance.net/gallery/30759973/Sick-Flower-A-mobile-app-prototype",
+    "work_class":"sickflower",
+    "work_title":"Visit website",
+    "work_label":[
+      "UX design",
+      "UI design"
+    ],
+    "work_images":[
+      "images/works/sickflower/1.jpg",
+      "images/works/sickflower/2.jpg",
+      "images/works/sickflower/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"VBCE Online Web Campain",
+    "work_href":"https://www.behance.net/gallery/30091449/Online-Campaign-Design-Refer-a-Friend",
+    "work_class":"vbce",
+    "work_title":"View details",
+    "work_label":[
+      "UI design",
+      "Front-end"
+    ],
+    "work_images":[
+      "images/works/vbce/1.jpg",
+      "images/works/vbce/2.jpg",
+      "images/works/vbce/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"AYCO Chartered Accountants Firm Website",
+    "work_href":"http://ayco.ca/",
+    "work_class":"ayco",
+    "work_title":"Visit website",
+    "work_label":[
+      "UX design",
+      "Front-end"
+    ],
+    "work_images":[
+      "images/works/ayco/1.jpg",
+      "images/works/ayco/2.jpg",
+      "images/works/ayco/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"Love for Lashes Shopify Site",
+    "work_href":"http://loveforlashes.ca/",
+    "work_class":"loveforlashes",
+    "work_title":"Visit website",
+    "work_label":[
+      "Front-end",
+      "UX design"
+    ],
+    "work_images":[
+      "images/works/loveforlashes/1.jpg",
+      "images/works/loveforlashes/2.jpg",
+      "images/works/loveforlashes/3.jpg"
+    ]
+  },
+
+  {
+    "work_name":"Speak English in 10 Days Book & Website",
+    "work_href":"http://speakenglishin10days.com/ch.html",
+    "work_class":"speakEnglishin10Days",
+    "work_title":"Visit website",
+    "work_label":[
+      "UI design",
+      "Front-end",
+      "Others"
+    ],
+    "work_images":[
+      "images/works/speakEnglishin10Days/1.jpg",
+      "images/works/speakEnglishin10Days/2.jpg",
+      "images/works/speakEnglishin10Days/3.jpg"
+    ]
+  }
+
+]

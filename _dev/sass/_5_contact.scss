@@ -21,6 +21,15 @@
   }
   .contact__links{
     background-color:$green;
+    a:hover svg#svg_behance{
+      #svg_behance_e,
+      #svg_behance_b{
+        // fill:#1769ff;
+      }
+    }
+    a:hover svg#svg_linkedin *{
+      // fill:#0077b5;
+    }
   }
   .contact__links-container{
     margin:6em auto;
@@ -41,10 +50,24 @@
       margin:0 .3em;
       font-weight: 300;
     }
-    .sprite,
+    #svg_email,
     span{
       vertical-align: middle;
       padding:$padding_narrow 0;
+    }
+    a:hover{
+      opacity:1;
+    }
+  }
+  #svg_email:hover{
+    #svg_email_lipup{
+      opacity:.8;
+    }
+    #svg_email_lipdown{
+      opacity:.3;
+    }
+    #svg_email_back{
+      fill:#447f0f;
     }
   }
   .site__note{

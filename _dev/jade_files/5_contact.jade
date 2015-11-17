@@ -4,15 +4,18 @@ section#contact
       .contact__links--bg
       .contact__links-container
         p Check out all my works and stay tuned!
-        .svg-behance.svg-behance-dims.sprite
+        include behance_svg.html
+        //- .svg-behance.svg-behance-dims.sprite
     a.half.contact__linkedin(href="https://ca.linkedin.com/in/glorygong" title="Connect with me on Linkedin" target="_blank")
       .contact__links--bg
       .contact__links-container
         p Do we have connections in common?
-        .svg-linkedin.svg-linkedin-dims.sprite
+        //- .svg-linkedin.svg-linkedin-dims.sprite
+        include linkedin_svg.html
   article.contact__email.center.wrap--inner
-      a.svg-sendEmail-dims.svg-sendEmail.sprite(href="mailto:gg.yanyi.gong@gmail.com" title="Send me an Email!") 
+      a(href="mailto:gg.yanyi.gong@gmail.com" title="Send me an Email!")
+        include email_svg.html
       span gg.yanyi.gong@gmail.com
   article.site__note.center.wrap--inner
-      p Site designed and built by myself with Axure, Illustrator, Photoshop, Atom, HTML5 (Jade), CSS3 (SASS), jQuery, Gulp, Github <br/>Dev code is available on 
+      p Site designed and built by myself with Axure, Illustrator, Photoshop, Atom, HTML5 (Jade), CSS3 (SASS), jQuery, JSON, Gulp, Github <br/>Dev code is available on 
         a(href="https://github.com/gloriagg/gloriagg.github.io" target="_blank" title="View the dev code of this site") Github

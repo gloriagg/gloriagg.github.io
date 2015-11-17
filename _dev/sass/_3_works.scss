@@ -58,4 +58,19 @@
       }
     }
   }
+  .works__filters{
+    text-align: center;
+    button{
+      border:none;
+      padding:$padding_narrow .6em;
+      display:inline-block;
+      margin:0 $padding_narrow 1.6em;
+      background: $lightgrey;
+      cursor: pointer;
+      &.active{
+        background: $green;
+        color:$grey;
+      }
+    }
+  }
 }

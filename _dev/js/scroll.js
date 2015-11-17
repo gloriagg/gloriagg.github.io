@@ -10,9 +10,7 @@ $(window).scroll(function(){
     // 'opacity':1-windowScroll/200
   });
 
-  // $("#intro .wrap--outer__upperlayer,#intro .wrap--outer__underlayer").css({
-  //   'background-position-y'     :"-'+windowScroll/40+'%"
-  // });
+  
 
   $("#intro .container,#intro .svg-goDown").css({
     'transform'     :'translateY('+windowScroll/4+'%)',
