@@ -118,5 +118,16 @@ a{
   &:hover{
     opacity:1;
     border-color:$darkgrey;
+    .sprite{
+      opacity:1;
+      width:35px;
+    }
+  }
+  .sprite{
+    vertical-align: middle;
+    margin-left:$padding_narrow;
+    transition: .1s ease-in-out;
+    opacity:0;
+    width:0;
   }
 }

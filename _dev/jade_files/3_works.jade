@@ -3,21 +3,20 @@ section#works
     .wrap--inner
       h1.section--title.center Selected Works
   article.works__wrap
-    //- .wrap--inner.works__filters.filter-button-group
-    //-   button(data-filter="*") All
-    //-   button(data-filter="ux_design") UX Design
-    //-   button(data-filter="ui_design") UI Design
-    //-   button(data-filter="front_end") Front-end
-    //-   button(data-filter="others") Others
+    .wrap--inner.works__filters
+      //- button(ng-repeat="label in labelList")
+      //-   span(ng-click="setSelectedClient()") {{label.name}}
+      //- button UX Design
+      //- button UI Design
+      //- button Front-end
     .works__all
-      //- a.aeip(href="https://www.behance.net/gallery/29997331/A-comprehensive-web-platform-UX-design" title="" target="_blank")
+      //- a(href="{{work.URL}}" title="{{work.title}}" target="_blank" ng-repeat="work in works")
       //-   .works__img
-      //-     img(src="")
-      //-   h3 AEIP Client Dashboard and CRM
+      //-     img(src="{{work.img_src}}")
+      //-   h3 {{work.work_name}}
       //-   .works__labels
-      //-     span UX design
-      //-     span Front-end
-      //- 
+      //-     span {{work.label}}
+      
       //- a.vcrc(href="https://www.behance.net/gallery/30586867/Mobile-App-UI-UX-Design-(Canadian-Citizenship-Test-App)" title="" target="_blank")
       //-   .works__img
       //-     img(src="")
@@ -120,3 +119,4 @@ section#works
       //-     span Front-end
   .center
     a.btn(href="https://www.behance.net/Yanyi_GG" title="View more works" target="_blank") View more works
+      span.svg-next_btn.svg-next_btn-dims.sprite

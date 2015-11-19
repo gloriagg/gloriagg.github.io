@@ -7,10 +7,10 @@ $(window).scroll(function(){
 
   // intro
   $("#intro .wrap--outer__upperlayer").css({
-    // 'opacity':1-windowScroll/200
+    'opacity':1-windowScroll/200
   });
 
-  
+
 
   $("#intro .container,#intro .svg-goDown").css({
     'transform'     :'translateY('+windowScroll/4+'%)',

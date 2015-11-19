@@ -26,6 +26,7 @@
     z-index:-1;
     top:0;
     border-radius:$radius;
+    -webkit-backface-visibility: hidden;
     .is_iOS & {
       background-image:none;
       background-attachment: scroll;

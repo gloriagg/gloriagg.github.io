@@ -6,9 +6,11 @@ $( document ).ready(function() {
     //JSON for Work section data
     $.getJSON("works.json",function(workdata){
         $.each(workdata, function(key,value){
-          var works_a_html = "<a href="+value.work_href+" class="+value.work_class+" target='_blank'><div class='works__img'><img src="+value.work_images[0]+"></div><h3>"+ value.work_name +"</h3><div class='works__labels'><span>"+ value.work_label +"</span></div></a>";
+          var works_a_html = "<a href="+value.URL+" class="+value.class+" target='_blank'><div class='works__img'><img src="+value.img_src[0]+"></div><h3>"+ value.name +"</h3><div class='works__labels'>"+ value.label +"</div></a>";
           $(".works__all").append(works_a_html);
         });
+
+
     });
 
 
@@ -96,7 +98,7 @@ $( document ).ready(function() {
 
 
     var $img_a = $(".works__all>a");
-    $img_a.find('img').attr('src','../images/works/loading.gif');
+    // $img_a.find('img').attr('src','../images/works/loading.gif');
     var $img = $(this).find('img');
 
 
