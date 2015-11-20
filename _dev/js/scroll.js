@@ -49,6 +49,7 @@ $(window).scroll(function(){
     var usability_test= "80%";
     var user_research= "80%";
     var statistical_analysis= "60%";
+    var agile_methodology= "75%";
     var visual_design= "70%";
     var motion_graphics= "25%";
 
@@ -59,7 +60,7 @@ $(window).scroll(function(){
     var wordpress= "50%";
     var shopify = "40%";
     var php = "10%";
-    var percentage_array=[wireframe,rapid_prototype,usability_test,user_research,statistical_analysis,visual_design,motion_graphics,html5,css3,jquery,gulp,wordpress,shopify,php];
+    var percentage_array=[wireframe,rapid_prototype,usability_test,user_research,statistical_analysis,agile_methodology,visual_design,motion_graphics,html5,css3,jquery,gulp,wordpress,shopify,php];
 
     var bar__single = $('li .skill__bar .skill__bar_percentage');
 

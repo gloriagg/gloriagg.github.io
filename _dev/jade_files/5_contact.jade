@@ -1,12 +1,18 @@
 section#contact
   article.contact__links
-    a.half.contact__behance(href="http://www.behance.net/Yanyi_GG" title="Check out my works on Behance.net" target="_blank")
+    a.block.contact__behance(href="http://www.behance.net/Yanyi_GG" title="Check out my works on Behance" target="_blank")
       .contact__links--bg
       .contact__links-container
         p Check out all my works and stay tuned!
         include behance_svg.html
         //- .svg-behance.svg-behance-dims.sprite
-    a.half.contact__linkedin(href="https://ca.linkedin.com/in/glorygong" title="Connect with me on Linkedin" target="_blank")
+    a.block.contact__youtube(href="https://www.youtube.com/user/GloryGong/videos" title="View my videos on YouTube" target="_blank")
+      .contact__links--bg
+      .contact__links-container
+        p Interested in my other interactive works?
+        //- .svg-linkedin.svg-linkedin-dims.sprite
+        include youtube_svg.html
+    a.block.contact__linkedin(href="https://ca.linkedin.com/in/glorygong" title="Connect with me on Linkedin" target="_blank")
       .contact__links--bg
       .contact__links-container
         p Do we have connections in common?
