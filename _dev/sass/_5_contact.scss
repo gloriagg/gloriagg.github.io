@@ -3,10 +3,12 @@
     display:inline-block;
     color:$grey;
     cursor:pointer;
-    width:(100%/3);
-    @include tablet(){
-      width:(100%/2);
-    };
+    width:(100%/2);
+    height:250px;
+    vertical-align:top;
+    // @include tablet(){
+    //   width:(100%/2);
+    // };
     @include phone(){
       width:100%;
     };
@@ -87,6 +89,21 @@
     }
     &:hover .contact__links--bg{
       background-color:#0077b5;
+    }
+  }
+
+
+  // flikcr
+  .contact__flickr{
+    .contact__links-container{
+      max-width:229px;
+    }
+    .contact__links--bg{
+      background-image:url('../images/Contact__flickr.jpg');
+      opacity:.2;
+    }
+    &:hover .contact__links--bg{
+      background-color:#ff0084;
     }
   }
 

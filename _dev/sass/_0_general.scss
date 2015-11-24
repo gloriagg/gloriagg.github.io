@@ -74,7 +74,7 @@ a{
 .clearfix { display: block; }
 
 .wrap--outer{
-  width:$desktop-width;
+  width:#{$desktop-width - 20px};
   margin:0 auto;
   @include tablet{
     width:100%;
